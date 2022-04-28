@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e948ff3846a5035aa9edbd60479229c, type: 3}
+  m_Name: Pumping Station
+  m_EditorClassIdentifier: 
+  displayName: Pumping Station
+  description: Collects liquid resources.
+  area: 10
+  powerUse: 30
+  reqs: 8
+  constructionCost: {fileID: 11400000, guid: 4908761f922d37a7cb90fe71bbf57667, type: 2}

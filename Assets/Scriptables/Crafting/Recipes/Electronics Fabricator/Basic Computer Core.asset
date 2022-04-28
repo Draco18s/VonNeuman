@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
+  m_Name: Basic Computer Core
+  m_EditorClassIdentifier: 
+  inputs:
+  - mat: {fileID: 11400000, guid: 2339d7144affb0a6882fd0c5d82c37b6, type: 2}
+    quant: 4
+    frac: 1
+  - mat: {fileID: 11400000, guid: 3ee96e5a8e773c7d7a585e3296ce530d, type: 2}
+    quant: 4
+    frac: 1
+  - mat: {fileID: 11400000, guid: e5fe2c77ae5f6c24d878fc7ca572ebd6, type: 2}
+    quant: 1
+    frac: 4
+  outputs:
+  - mat: {fileID: 11400000, guid: f34cf2a4f0f37a9bbbf6f71a3e6e9a87, type: 2}
+    quant: 1
+    frac: 1
+  building: {fileID: 11400000, guid: e71f9329c9daeef82962b242a756bf0a, type: 2}
+  time: 0

@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1258802183
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: galaxy
+      Dependencies: {}

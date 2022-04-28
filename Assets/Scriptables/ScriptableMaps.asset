@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990bf87e8c506895ea74cd5fdf5b225d, type: 3}
+  m_Name: ScriptableMaps
+  m_EditorClassIdentifier: 
+  scriptables:
+  - {fileID: 11400000, guid: f8e490937e58a2c94b0d9d6866e9e8ce, type: 2}
+  - {fileID: 11400000, guid: ab395aaa799f9c984b61468b4e9dcd25, type: 2}
+  - {fileID: 11400000, guid: e7855744c4a7d806f914e546ce679d38, type: 2}
+  - {fileID: 11400000, guid: 3375f6a4e302ee454bcbafce65bc9b44, type: 2}
+  - {fileID: 11400000, guid: 444465560ed3aa19788710ae69d82c3d, type: 2}
+  - {fileID: 11400000, guid: 01781cd1216ce2c229a1d8bf4a9ec490, type: 2}

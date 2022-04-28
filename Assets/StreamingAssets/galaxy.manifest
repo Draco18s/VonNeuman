@@ -1,0 +1,281 @@
+ManifestFileVersion: 0
+CRC: 1354620115
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 09f9015928dc6223301d098df5b43dd9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 768f995ba89f1c4a0d674a2b4610987d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76aa0fa38782f4a82bc80d968e5c7b58, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dd5d99429538f220eb815ace776a6b86, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 03b1c7503b18c950a81807bde673cbc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 68352b9cb7d21f03bbe5aaed4f1d8beb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 990bf87e8c506895ea74cd5fdf5b225d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ae982e74c199ce684978022cd698caaa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e204270de0f0d0b22bf778e3cbb4ec5c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2e948ff3846a5035aa9edbd60479229c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7dca31ffa48fb09b4b689b3d8d5af387, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d82221e0528c7f5d394c667c8de42aa4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.Ingredient
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.properties.AtomicProperties
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.properties.ContainerProperties
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.properties.PowerFuelProperties
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.properties.RocketFuelProperties
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.crafting.properties.RocketProperties
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.gameAssets.ElementData
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.gameAssets.SpriteData
+- AssemblyName: Assembly-CSharp
+  ClassName: Assets.draco18s.space.stellar.StarData
+Assets:
+- Assets/Scriptables/Crafting/Materials/Metals/Silicon.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Sulfur.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Small Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Iron.asset
+- Assets/Scriptables/Crafting/Buildings/Gas Collector.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Uranium Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Tubing.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Support Frame.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Drone Battery.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Bulkhead.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Ash.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Iron Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Sulfur Dioxide.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Neon.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Iron.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Steel.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Copper Ore.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Fluorine.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Gold Ore.asset
+- Assets/Scriptables/Crafting/Materials/Minerals/Potash Salt.asset
+- Assets/Scriptables/Crafting/Recipes/Units/Surface Drone.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Basic Computer Core.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Xenon.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Clean Water 1.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Extractor.asset
+- Assets/Scriptables/Crafting/Units/Surface Drone.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Titanium.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Support Frame.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Plate.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Helium.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Uranium Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Bulkhead.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Silica.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Iron Flux.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Iron.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Metal Bulkhead.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Bauxite Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Uranium.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Iron Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Cargo Pod.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Organic Waste Water.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Uranium.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Flux.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Methane.asset
+- Assets/Scriptables/Crafting/Materials/Minerals/Limestone.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Ammonia.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Copper.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Enriched Uranium.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Nitrogen.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-High.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrogen Sulfilde.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Organic Sludge.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slag.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Clean Water 2.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Small Thruster.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Potassium Chloride.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Kerosene.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Medium Fuel Tank.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Pumping Station.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Incinerator.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Metal Former.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Water.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Cyanogen.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/RTG-High.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Simple Motors.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Enrich Uranium.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Nitrous Oxide.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Fuel Tank.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Methane.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Basic Computer Core.asset
+- Assets/Scriptables/Crafting/Buildings/Smelter.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Sulfur.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Wiring.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Silicon.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Tubing.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Cyanide.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Copper.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Silicon.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Smelter.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Chlorine.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Limestone.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Sulfur Dioxide.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Electronics Fabricator.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Nitric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Small Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Flux.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Circuit Board.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Iron Plate.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Nitrous Oxide.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny Thruster.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Fluoride.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Lye.asset
+- Assets/Scriptables/ScriptableMaps.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Ash.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio Tranceiver.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple Motors.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Chemical Plant.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Plate.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Sulfuric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Basic Structural Panel.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Xenon.asset
+- Assets/Scriptables/Categories.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Potassium Chloride.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Sulfuric Acid.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Gas Collector.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Wiring.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Glass 1.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Copper.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Methane.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Lithium.asset
+- Assets/Scriptables/Star Names.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Large Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Argon.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Hydrogen.asset
+- Assets/Scriptables/Crafting/Buildings/Electronics Fabricator.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Sulfuric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Copper Ore.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Aluminum Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Combustion Power Plant.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Aluminum.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Clean Water.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Copper Wiring.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Water Vapor.asset
+- Assets/Scriptables/Crafting/Buildings/Combustion Power Plant.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Cyanogen.asset
+- Assets/Scriptables/Crafting/Materials/Minerals/Hydrogen Sulfide.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Limestone.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Silicon Ore.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Plate.asset
+- Assets/Scriptables/Crafting/Buildings/Pumping Station.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Tubing.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Carbon.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Gold.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Carbon Dioxide.asset
+- Assets/Scriptables/Crafting/Buildings/Chemical Plant.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Refine Sulfur.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Gold.asset
+- Assets/Scriptables/Crafting/Buildings/Filtration Plant.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Phosphine.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Titanium Ore.asset
+- Assets/Scriptables/FactoryMap.asset
+- Assets/Scriptables/StarPositionMap.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Fabricator.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Filtration Plant.asset
+- Assets/Scriptables/Crafting/Buildings/Spacedock.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Tiny Thruster.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Silicon Ore.asset
+- Assets/Scriptables/Crafting/Buildings/Metal Former.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Water.asset
+- Assets/Scriptables/Crafting/Recipes/Filtration Plant/Clean Water 2.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrogen Cyanide.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Oxygen.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slurry.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Dirty Water.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Bulkhead.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Copper.asset
+- Assets/Scriptables/MaterialMap.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Cargo Pod.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Large Thruster.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Tiny Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Copper Wiring.asset
+- Assets/Scriptables/Crafting/Recipes/Filtration Plant/Clean Water 1.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Copper Wiring.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/RTG-Low.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Wiring.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Large Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Ammonia.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrofluoric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Silumin.asset
+- Assets/Scriptables/Crafting/Materials/Materials/Glass.asset
+- Assets/Scriptables/Crafting/Materials/Ores/Phosphorite.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Thruster.asset
+- Assets/Images/SpriteMap.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Iron Tubing.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Alloy Silumin.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/CO2.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Phosphine.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Drone Shell.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Aluminum.asset
+- Assets/Scriptables/Crafting/Buildings/Fabricator.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Circuit Board.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Med.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Phosphorus.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Plate.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrogen Fluoride.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Melt Aluminum.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Drone Battery.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Hydrofluoric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Small Cargo Pod.asset
+- Assets/Scriptables/Crafting/Buildings/Extractor.asset
+- Assets/Scriptables/RecipeMap.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Hydrofluoric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Aluminum.asset
+- Assets/Scriptables/Crafting/Materials/Ship Parts/Cargo Netting.asset
+- Assets/Scriptables/PeriodicElements.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Tiny Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Uranium.asset
+- Assets/Scriptables/Crafting/Recipes/Smelter/Alloy Silumin.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Steel.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Lye.asset
+- Assets/Scriptables/Crafting/Materials/Chemicals/Calcium.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Drone Battery.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Argon.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Oxygen.asset
+- Assets/Scriptables/Crafting/Materials/Metals/Gold.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Low.asset
+- Assets/Scriptables/Crafting/Recipes/Extractor/Mine Sulfur.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/RTG-Med.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset
+- Assets/Scriptables/Crafting/Recipes/Metal Former/Small Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Spacedock.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Iron.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Hydrofluoric Acid.asset
+- Assets/Scriptables/Crafting/Materials/Materials/Wood.asset
+Dependencies: []

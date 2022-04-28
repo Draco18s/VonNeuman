@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
+  m_Name: Fabricator
+  m_EditorClassIdentifier: 
+  inputs:
+  - mat: {fileID: 11400000, guid: 837d259a41e1afbd5a6dbfc945a20927, type: 2}
+    quant: 2
+    frac: 1
+  - mat: {fileID: 11400000, guid: 09372f2fe6d0e90d18d4a724823795f0, type: 2}
+    quant: 6
+    frac: 1
+  outputs: []
+  building: {fileID: 0}
+  time: 1728000

@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5d99429538f220eb815ace776a6b86, type: 3}
+  m_Name: MaterialMap
+  m_EditorClassIdentifier: 
+  _directory: Materials
+  _class: Assets.draco18s.serialization.ScriptableObjectMap`1[[Assets.draco18s.crafting.Material,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _data: Assets/Scriptables/Crafting/Materials/Chemicals/Calcium.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Carbon.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Flux.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Lye.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Phosphorus.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Sulfur.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Basic Structural Panel.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Bulkhead.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal
+    Plate.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Support Frame.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Basic
+    Computer Core.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Circuit
+    Board.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Drone Battery.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-High.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Low.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-Med.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio
+    Tranceiver.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple
+    Motors.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Wiring.asset,Assets/Scriptables/Crafting/Materials/Gasses/Ammonia.asset,Assets/Scriptables/Crafting/Materials/Gasses/Argon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Carbon
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Chlorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Cyanogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Fluorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Helium.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen
+    Cyanide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Fluoride.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Methane.asset,Assets/Scriptables/Crafting/Materials/Gasses/Neon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrous
+    Oxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Oxygen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Phosphine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Sulfur
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Xenon.asset,Assets/Scriptables/Crafting/Materials/Liquids/Clean
+    Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Hydrofluoric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Kerosene.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic
+    Slag.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slurry.asset,Assets/Scriptables/Crafting/Materials/Liquids/Nitric
+    Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic Sludge.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic
+    Waste Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Sulfuric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Water.asset,Assets/Scriptables/Crafting/Materials/Materials/Glass.asset,Assets/Scriptables/Crafting/Materials/Materials/Wood.asset,Assets/Scriptables/Crafting/Materials/Metals/Aluminum.asset,Assets/Scriptables/Crafting/Materials/Metals/Copper.asset,Assets/Scriptables/Crafting/Materials/Metals/Enriched
+    Uranium.asset,Assets/Scriptables/Crafting/Materials/Metals/Gold.asset,Assets/Scriptables/Crafting/Materials/Metals/Iron.asset,Assets/Scriptables/Crafting/Materials/Metals/Lithium.asset,Assets/Scriptables/Crafting/Materials/Metals/Silicon.asset,Assets/Scriptables/Crafting/Materials/Metals/Silumin.asset,Assets/Scriptables/Crafting/Materials/Metals/Steel.asset,Assets/Scriptables/Crafting/Materials/Metals/Titanium.asset,Assets/Scriptables/Crafting/Materials/Metals/Uranium.asset,Assets/Scriptables/Crafting/Materials/Minerals/Hydrogen
+    Sulfide.asset,Assets/Scriptables/Crafting/Materials/Minerals/Limestone.asset,Assets/Scriptables/Crafting/Materials/Minerals/Potash
+    Salt.asset,Assets/Scriptables/Crafting/Materials/Ores/Aluminum Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Copper
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Gold Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Iron
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Phosphorite.asset,Assets/Scriptables/Crafting/Materials/Ores/Silicon
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Titanium Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Uranium
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Cargo Netting.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Drone Shell.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Medium Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Small Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Tiny Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny
+    Thruster.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Calcium.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Carbon.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Flux.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Lye.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Phosphorus.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Sulfur.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Basic Structural Panel.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Bulkhead.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal
+    Plate.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Support Frame.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Basic
+    Computer Core.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Circuit
+    Board.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Drone Battery.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-High.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Low.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-Med.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio
+    Tranceiver.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple
+    Motors.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Wiring.asset,Assets/Scriptables/Crafting/Materials/Gasses/Ammonia.asset,Assets/Scriptables/Crafting/Materials/Gasses/Argon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Carbon
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Chlorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Cyanogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Fluorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Helium.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen
+    Cyanide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Fluoride.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Methane.asset,Assets/Scriptables/Crafting/Materials/Gasses/Neon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrous
+    Oxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Oxygen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Phosphine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Sulfur
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Xenon.asset,Assets/Scriptables/Crafting/Materials/Liquids/Clean
+    Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Hydrofluoric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Kerosene.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic
+    Slag.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slurry.asset,Assets/Scriptables/Crafting/Materials/Liquids/Nitric
+    Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic Sludge.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic
+    Waste Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Sulfuric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Water.asset,Assets/Scriptables/Crafting/Materials/Materials/Glass.asset,Assets/Scriptables/Crafting/Materials/Materials/Wood.asset,Assets/Scriptables/Crafting/Materials/Metals/Aluminum.asset,Assets/Scriptables/Crafting/Materials/Metals/Copper.asset,Assets/Scriptables/Crafting/Materials/Metals/Enriched
+    Uranium.asset,Assets/Scriptables/Crafting/Materials/Metals/Gold.asset,Assets/Scriptables/Crafting/Materials/Metals/Iron.asset,Assets/Scriptables/Crafting/Materials/Metals/Lithium.asset,Assets/Scriptables/Crafting/Materials/Metals/Silicon.asset,Assets/Scriptables/Crafting/Materials/Metals/Silumin.asset,Assets/Scriptables/Crafting/Materials/Metals/Steel.asset,Assets/Scriptables/Crafting/Materials/Metals/Titanium.asset,Assets/Scriptables/Crafting/Materials/Metals/Uranium.asset,Assets/Scriptables/Crafting/Materials/Minerals/Hydrogen
+    Sulfide.asset,Assets/Scriptables/Crafting/Materials/Minerals/Limestone.asset,Assets/Scriptables/Crafting/Materials/Minerals/Potash
+    Salt.asset,Assets/Scriptables/Crafting/Materials/Ores/Aluminum Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Copper
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Gold Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Iron
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Phosphorite.asset,Assets/Scriptables/Crafting/Materials/Ores/Silicon
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Titanium Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Uranium
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Cargo Netting.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Drone Shell.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Medium Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Small Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Tiny Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny
+    Thruster.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Calcium.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Carbon.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Flux.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Lye.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Phosphorus.asset,Assets/Scriptables/Crafting/Materials/Chemicals/Sulfur.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Basic Structural Panel.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Bulkhead.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal
+    Plate.asset,Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset,Assets/Scriptables/Crafting/Materials/Construction
+    Parts/Support Frame.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Basic
+    Computer Core.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Circuit
+    Board.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Drone Battery.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-High.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Low.asset,Assets/Scriptables/Crafting/Materials/Electronic
+    Parts/RTG-Med.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio
+    Tranceiver.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple
+    Motors.asset,Assets/Scriptables/Crafting/Materials/Electronic Parts/Wiring.asset,Assets/Scriptables/Crafting/Materials/Gasses/Ammonia.asset,Assets/Scriptables/Crafting/Materials/Gasses/Argon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Carbon
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Chlorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Cyanogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Fluorine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Helium.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen
+    Cyanide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Fluoride.asset,Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Methane.asset,Assets/Scriptables/Crafting/Materials/Gasses/Neon.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrogen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Nitrous
+    Oxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Oxygen.asset,Assets/Scriptables/Crafting/Materials/Gasses/Phosphine.asset,Assets/Scriptables/Crafting/Materials/Gasses/Sulfur
+    Dioxide.asset,Assets/Scriptables/Crafting/Materials/Gasses/Xenon.asset,Assets/Scriptables/Crafting/Materials/Liquids/Clean
+    Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Hydrofluoric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Kerosene.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic
+    Slag.asset,Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slurry.asset,Assets/Scriptables/Crafting/Materials/Liquids/Nitric
+    Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic Sludge.asset,Assets/Scriptables/Crafting/Materials/Liquids/Organic
+    Waste Water.asset,Assets/Scriptables/Crafting/Materials/Liquids/Sulfuric Acid.asset,Assets/Scriptables/Crafting/Materials/Liquids/Water.asset,Assets/Scriptables/Crafting/Materials/Materials/Glass.asset,Assets/Scriptables/Crafting/Materials/Materials/Wood.asset,Assets/Scriptables/Crafting/Materials/Metals/Aluminum.asset,Assets/Scriptables/Crafting/Materials/Metals/Copper.asset,Assets/Scriptables/Crafting/Materials/Metals/Enriched
+    Uranium.asset,Assets/Scriptables/Crafting/Materials/Metals/Gold.asset,Assets/Scriptables/Crafting/Materials/Metals/Iron.asset,Assets/Scriptables/Crafting/Materials/Metals/Lithium.asset,Assets/Scriptables/Crafting/Materials/Metals/Silicon.asset,Assets/Scriptables/Crafting/Materials/Metals/Silumin.asset,Assets/Scriptables/Crafting/Materials/Metals/Steel.asset,Assets/Scriptables/Crafting/Materials/Metals/Titanium.asset,Assets/Scriptables/Crafting/Materials/Metals/Uranium.asset,Assets/Scriptables/Crafting/Materials/Minerals/Hydrogen
+    Sulfide.asset,Assets/Scriptables/Crafting/Materials/Minerals/Limestone.asset,Assets/Scriptables/Crafting/Materials/Minerals/Potash
+    Salt.asset,Assets/Scriptables/Crafting/Materials/Ores/Aluminum Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Copper
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Gold Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Iron
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Phosphorite.asset,Assets/Scriptables/Crafting/Materials/Ores/Silicon
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Titanium Ore.asset,Assets/Scriptables/Crafting/Materials/Ores/Uranium
+    Ore.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Cargo Netting.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Drone Shell.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Large Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Medium Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Medium Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Small Cargo Pod.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small
+    Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset,Assets/Scriptables/Crafting/Materials/Ship
+    Parts/Tiny Fuel Tank.asset,Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny
+    Thruster.asset
+  _bundle: galaxy

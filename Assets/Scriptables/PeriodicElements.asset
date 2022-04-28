@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68352b9cb7d21f03bbe5aaed4f1d8beb, type: 3}
+  m_Name: PeriodicElements
+  m_EditorClassIdentifier: 
+  elements:
+  - id: 1
+    name: Hydrogen
+    relativeQuant: 10.5
+    greenhousePotential: 1
+    elemTyp: 16
+    material: {fileID: 11400000, guid: d403ab5524605030991c41bd2c97ed33, type: 2}
+  - id: 2
+    name: Helium
+    relativeQuant: 9.1
+    greenhousePotential: -5
+    elemTyp: 32
+    material: {fileID: 11400000, guid: bc2558a973bdfd32fb30f14b200f1cc9, type: 2}
+  - id: 3
+    name: Lithium
+    relativeQuant: 1.7
+    greenhousePotential: 0
+    elemTyp: 1
+    material: {fileID: 11400000, guid: 88631b22aa1b9bbad8141d2e0ec20b9d, type: 2}
+  - id: 6
+    name: Carbon
+    relativeQuant: 7
+    greenhousePotential: 6.5
+    elemTyp: 24
+    material: {fileID: 11400000, guid: 08109ddc3b17a462d8f4c17f444eb6c4, type: 2}
+  - id: 7
+    name: Nitrogen
+    relativeQuant: 6.5
+    greenhousePotential: 0.1
+    elemTyp: 40
+    material: {fileID: 11400000, guid: d5cecfd8ba43b560780ea98931065c81, type: 2}
+  - id: 8
+    name: Oxygen
+    relativeQuant: 7.2
+    greenhousePotential: 2
+    elemTyp: 16
+    material: {fileID: 11400000, guid: f72001146f8f3da01a8f583640669d7a, type: 2}
+  - id: 9
+    name: Fluorine
+    relativeQuant: 3.4
+    greenhousePotential: 50
+    elemTyp: 16
+    material: {fileID: 11400000, guid: aea5dd620198f70eb814577df0abf784, type: 2}
+  - id: 10
+    name: Neon
+    relativeQuant: 6.5
+    greenhousePotential: -5
+    elemTyp: 32
+    material: {fileID: 11400000, guid: 68e692607789eb862b8f40acc6bb9ec7, type: 2}
+  - id: 13
+    name: Aluminum
+    relativeQuant: 4.9
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: b27edd2539817c1109e11d9ff5092656, type: 2}
+  - id: 14
+    name: Silicon
+    relativeQuant: 6
+    greenhousePotential: 0
+    elemTyp: 12
+    material: {fileID: 11400000, guid: 4e2f3e90d9b24eaa28b6ac1ba2f18f26, type: 2}
+  - id: 15
+    name: Phosphorus
+    relativeQuant: 4
+    greenhousePotential: 0
+    elemTyp: 8
+    material: {fileID: 11400000, guid: b2eccc7141d5fd7799edc4166d6c48bf, type: 2}
+  - id: 16
+    name: Sulfur
+    relativeQuant: 5.8
+    greenhousePotential: 10
+    elemTyp: 8
+    material: {fileID: 11400000, guid: 3185e59cd551ee5ed95525ad851fb324, type: 2}
+  - id: 17
+    name: Chlorine
+    relativeQuant: 3.8
+    greenhousePotential: 0
+    elemTyp: 16
+    material: {fileID: 11400000, guid: 8ca320fecc02338198e20d318be821e2, type: 2}
+  - id: 18
+    name: Argon
+    relativeQuant: 5.1
+    greenhousePotential: -5
+    elemTyp: 32
+    material: {fileID: 11400000, guid: 3fce1f25c07774b24aa39b0102aa199e, type: 2}
+  - id: 19
+    name: Potasium
+    relativeQuant: 3.6
+    greenhousePotential: -0.5
+    elemTyp: 1
+    material: {fileID: 11400000, guid: 10e599787e54fe4b684549efe8f10dad, type: 2}
+  - id: 20
+    name: Calcium
+    relativeQuant: 3.9
+    greenhousePotential: 0
+    elemTyp: 8
+    material: {fileID: 11400000, guid: 3c4a629b85576bde0bb8bd0d00080082, type: 2}
+  - id: 22
+    name: Titanium
+    relativeQuant: 3.5
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: b1f50d308ccb454f4aa6e662e4ad9563, type: 2}
+  - id: 26
+    name: Iron
+    relativeQuant: 5.9
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: 71ca55911414e7f2798ca83083a7025a, type: 2}
+  - id: 29
+    name: Copper
+    relativeQuant: 2.8
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: 28c09a219527469678a29ee317774528, type: 2}
+  - id: 54
+    name: Xenon
+    relativeQuant: 0.8
+    greenhousePotential: -5
+    elemTyp: 32
+    material: {fileID: 11400000, guid: 0cd103a2aead5754790b451f55f54bb8, type: 2}
+  - id: 79
+    name: Gold
+    relativeQuant: -0.8
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: 197e7bc6854b74839acfae01bfea29cb, type: 2}
+  - id: 92
+    name: Uranium
+    relativeQuant: -1.7
+    greenhousePotential: 0
+    elemTyp: 2
+    material: {fileID: 11400000, guid: 8b667e0b6f3ea6e5292dcf5a70036b30, type: 2}

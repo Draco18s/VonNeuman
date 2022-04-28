@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae982e74c199ce684978022cd698caaa, type: 3}
+  m_Name: SpriteMap
+  m_EditorClassIdentifier: 
+  sprites:
+  - spriteId: star
+    sprite: {fileID: 21300000, guid: 0f48ed346a79f514bb1a6e4b49c24e99, type: 3}
+  - spriteId: star-large
+    sprite: {fileID: 21300000, guid: fa5e472bffb448f4b8af1825fbb692d8, type: 3}
+  - spriteId: star-sprite_0
+    sprite: {fileID: 1635683677149145566, guid: 4c4f7c84264592f9aa33d4449dabac90, type: 3}
+  - spriteId: star-sprite_1
+    sprite: {fileID: -2337924407886642849, guid: 4c4f7c84264592f9aa33d4449dabac90, type: 3}
+  - spriteId: star-sprite_2
+    sprite: {fileID: 2683653024158801580, guid: 4c4f7c84264592f9aa33d4449dabac90, type: 3}
+  - spriteId: star-sprite_3
+    sprite: {fileID: 9018506388972112960, guid: 4c4f7c84264592f9aa33d4449dabac90, type: 3}
+  - spriteId: star-sprite_4
+    sprite: {fileID: -6592272186090658354, guid: 4c4f7c84264592f9aa33d4449dabac90, type: 3}
+  - spriteId: planet-sprite_0
+    sprite: {fileID: 2502468155425607367, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_1
+    sprite: {fileID: -5195047377215352885, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_2
+    sprite: {fileID: 2731671600153749537, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_3
+    sprite: {fileID: 4854406718061145708, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_4
+    sprite: {fileID: 5943773460415525054, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_5
+    sprite: {fileID: 6032365109957120597, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_6
+    sprite: {fileID: 5034984620472940827, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_7
+    sprite: {fileID: 7605441543642926377, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: planet-sprite_8
+    sprite: {fileID: 2204816605600419858, guid: 69548af9522095fe69515875bc2f69b4, type: 3}
+  - spriteId: star-large-sprite_0
+    sprite: {fileID: -3577981956569501231, guid: 168a9c7e632c29ae2a972a72d293da6d, type: 3}
+  - spriteId: star-large-sprite_1
+    sprite: {fileID: -7121580641711570453, guid: 168a9c7e632c29ae2a972a72d293da6d, type: 3}
+  - spriteId: star-large-sprite_2
+    sprite: {fileID: -3584329391584235083, guid: 168a9c7e632c29ae2a972a72d293da6d, type: 3}
+  - spriteId: star-large-sprite_3
+    sprite: {fileID: -6906618230502020361, guid: 168a9c7e632c29ae2a972a72d293da6d, type: 3}
+  - spriteId: star-large-sprite_4
+    sprite: {fileID: 1285812354510066283, guid: 168a9c7e632c29ae2a972a72d293da6d, type: 3}

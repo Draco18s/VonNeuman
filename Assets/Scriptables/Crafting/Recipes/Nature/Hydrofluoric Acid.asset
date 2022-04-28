@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
+  m_Name: Hydrofluoric Acid
+  m_EditorClassIdentifier: 
+  inputs:
+  - mat: {fileID: 11400000, guid: d403ab5524605030991c41bd2c97ed33, type: 2}
+    quant: 1
+    frac: 1
+  - mat: {fileID: 11400000, guid: aea5dd620198f70eb814577df0abf784, type: 2}
+    quant: 1
+    frac: 1
+  - mat: {fileID: 11400000, guid: f72001146f8f3da01a8f583640669d7a, type: 2}
+    quant: 1
+    frac: 1
+  outputs:
+  - mat: {fileID: 11400000, guid: d7b3741ec73c788d9a8d52f985f1aa46, type: 2}
+    quant: 1
+    frac: 1
+  building: {fileID: 0}
+  time: 0

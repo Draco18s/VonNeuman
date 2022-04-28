@@ -1,0 +1,16 @@
+{
+    "name": "DracoUtils",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f831b8586e1a5c341b82c66b53a2eb92"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
