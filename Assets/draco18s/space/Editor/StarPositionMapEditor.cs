@@ -4,10 +4,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEditorInternal;
 using Assets.draco18s.space.stellar;
 using Assets.draco18s.util;
 using System.Linq;
 using System;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Assets.draco18s.space.Editor
 {
@@ -19,13 +22,51 @@ namespace Assets.draco18s.space.Editor
 		string filePath = "";
 		private static int total;
 		private static int count;
+		ReorderableList rl = null;
+
+		private static int skip;
+		private static int pskip;
+		const int MaxListSize = 20;
+		private static List<Dictionary<string, object>> stardict;
 
 		public override void OnInspectorGUI()
 		{
 			StarPositionMap map = (StarPositionMap)target;
+			SerializedProperty starsProp = serializedObject.FindProperty("knownStars");
 			EditorGUI.BeginDisabledGroup(running);
-			base.OnInspectorGUI();
-			
+
+			EditorGUILayout.BeginHorizontal();
+			EditorGUILayout.LabelField("Known Stars");
+			starsProp.arraySize = EditorGUILayout.DelayedIntField(starsProp.arraySize);
+			EditorGUILayout.EndHorizontal();
+
+			//base.OnInspectorGUI();
+			/*if(rl == null) {
+				List<StarData> list = map.knownStars.Skip(skip).Take(MaxListSize).ToList();
+				rl = new ReorderableList(serializedObject, starsProp) {
+					drawHeaderCallback = (rect) =>
+					{
+						Rect rect2 = new Rect(rect);
+						rect2.x = Screen.width - 60;
+						rect2.width = 50;
+						starsProp.arraySize = EditorGUI.DelayedIntField(rect2, starsProp.arraySize);
+						EditorGUI.LabelField(rect,"Known Stars");
+					},
+					drawElementCallback = (rect, index, isActive, isFocused) => {
+						if(index >= skip && index < skip+MaxListSize) {
+							EditorGUI.PropertyField(rect, starsProp.GetArrayElementAtIndex(index));
+						}
+					},
+					elementHeightCallback = (index) => {
+						if(index >= skip && index < skip+MaxListSize) {
+							return EditorGUI.GetPropertyHeight(starsProp.GetArrayElementAtIndex(index));
+						}
+						return 0;
+					},
+					draggable = false
+				};
+			}
+			rl.DoLayoutList();*/
 			EditorGUILayout.LabelField(string.IsNullOrEmpty(filePath) ? "" : PathExtensions.MakeRelative(filePath,Application.dataPath));
 			if (GUILayout.Button("Select CSV")) {
 				filePath = EditorUtility.OpenFilePanel("Select CSV","","csv");
@@ -36,28 +77,68 @@ namespace Assets.draco18s.space.Editor
 			}
 			EditorGUI.EndDisabledGroup();
 			EditorGUI.EndDisabledGroup();
-			if(!reading)
-				running = false;
+			
 			EditorGUI.BeginDisabledGroup(running || reading || map.knownStars.Count == 0);
+			EditorGUI.BeginDisabledGroup(filePath.Length == 0);
+			skip = EditorGUILayout.DelayedIntField("Skip", skip);
+			pskip = EditorGUILayout.DelayedIntField("Take", pskip);
 			if (GUILayout.Button("Cleanup")) {
-				_ = DoCleanup(map);
+				_ = DoCleanup(filePath, map);
 			}
+			EditorGUI.EndDisabledGroup();
 			EditorGUI.EndDisabledGroup();
 			EditorGUILayout.LabelField($"{count}/{total}");
 		}
 
-		static async Task DoCleanup(StarPositionMap map) {
+		static async Task DoCleanup(string filePath, StarPositionMap map) {
 			Debug.Log("Cleaning");
 			await Task.Delay(1);
-			var list = map.knownStars.Where(d => true).ToList();
+			running = true;
+			reading = true;
+			Debug.Log("Reading file, please wait");
+			if(stardict == null) {
+				stardict = await CSVReader.ReadAsync(filePath);
+				reading = false;
+			}
+			Debug.Log("Generating modification list");
+			await Task.Delay(1);
+			var list = map.knownStars.Where(d => {
+				return Regex.IsMatch(d.properName, "HD 123456");
+			}).Skip(skip).Take(pskip).ToList();
 			total = list.Count();
 			count = 0;
 			foreach(StarData d in list) {
 				running = true;
-				Debug.Log($"{d.properName}, {d.coords}, {d.hygID}");
+				string name = "";
+				Dictionary<string, object> dictEntry = stardict[d.hygID];
+				if(d.hygID < stardict.Count)
+					name = (string)stardict[d.hygID]["proper"];
+				if(string.IsNullOrEmpty(name)) {
+					name = StarNames.GetRandomName();
+					if(name == "HD") {
+						string hdn = stardict[d.hygID]["hd"].ToString();
+						if(string.IsNullOrEmpty(hdn)) {
+							hdn = stardict[d.hygID]["hip"].ToString();
+							if(string.IsNullOrEmpty(hdn)) {
+								hdn = d.hygID.ToString();
+								name = $"HYG {hdn}";
+							}
+							else {
+								name = $"HIG {hdn}";
+							}
+						}
+						else {
+							name = $"HD {hdn}";
+						}
+					}
+					else if(name.Contains("?°")) {
+						name = name.Replace("?",Mathf.FloorToInt((float)stardict[d.hygID]["dec"]).ToString("+#;−#;0"));
+					}
+				}
+				Debug.Log($"{d.properName} -> {name}");
 				map.knownStars[map.knownStars.IndexOf(d)] = new StarData() {
 					coords = d.coords,
-					properName = d.properName,
+					properName = name,
 					hygID = d.hygID,
 					brightnessMagnitude = d.brightnessMagnitude,
 					spectralType = d.spectralType,
@@ -65,20 +146,13 @@ namespace Assets.draco18s.space.Editor
 					mass = d.mass
 				};
 				count++;
-				if(count % 100 == 0) return;//await Task.Delay(1);
 			}
-			/*map.knownStars.ForEach(star => {
-				k++;
-				float bm = star.baseMass;
-				star.mass = bm + ((UnityEngine.Random.value-0.5f)*bm*0.15f);
-				if(j == k) {
-					Debug.Log($"{star.properName}: {star.mass}");
-				}
-			});*/
-			//map.knownStars.RemoveAll(x => x.coords.magnitude > 1000);
+			Debug.Log("Finalizing");
 			EditorUtility.SetDirty(map);
 			//AssetDatabase.ForceReserializeAssets();
 			Debug.Log("Done");
+			running = false;
+			reading = false;
 		}
 
 		static async Task ParseFileAsync(string filePath, StarPositionMap map) {
@@ -133,6 +207,8 @@ namespace Assets.draco18s.space.Editor
 			EditorUtility.SetDirty(map);
 			running = false;
 			Debug.Log($"Done! {validStars.Count()} mapped");
+			running = false;
+			reading = false;
 		}
 
 		static string GetNewName(List<string> names) {

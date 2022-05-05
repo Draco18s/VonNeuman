@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1354620115
+CRC: 2840237476
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 09f9015928dc6223301d098df5b43dd9
+    Hash: fbb8ab722a4227185d602f9d025eef47
   TypeTreeHash:
     serializedVersion: 2
     Hash: 768f995ba89f1c4a0d674a2b4610987d
@@ -122,8 +122,10 @@ Assets:
 - Assets/Scriptables/Crafting/Recipes/Buildings/Metal Former.asset
 - Assets/Scriptables/Crafting/Materials/Liquids/Water.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Cyanogen.asset
+- Assets/Scriptables/Crafting/Buildings/Warehouse.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/RTG-High.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Warehouse.asset
 - Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Simple Motors.asset
 - Assets/Scriptables/Crafting/Recipes/Chemical Plant/Enrich Uranium.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Nitrous Oxide.asset
@@ -157,6 +159,7 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio Tranceiver.asset
 - Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple Motors.asset
 - Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset
+- Assets/Scriptables/Crafting/Materials/Materials/Construction Granulate.asset
 - Assets/Scriptables/Crafting/Recipes/Buildings/Chemical Plant.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Plate.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Sulfuric Acid.asset
@@ -196,6 +199,7 @@ Assets:
 - Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Gold.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Carbon Dioxide.asset
 - Assets/Scriptables/Crafting/Buildings/Chemical Plant.asset
+- Assets/Scriptables/Crafting/Recipes/Fabricator/Construction Granulate.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Refine Sulfur.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Melt Gold.asset
 - Assets/Scriptables/Crafting/Buildings/Filtration Plant.asset

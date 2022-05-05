@@ -31,12 +31,11 @@ namespace Assets.draco18s.legion.game {
 
 		public GameData(StarPositionMap starmapData) {
 			galaxy = Galaxy.GenerateGalaxy(starmapData, 1000);
-			tickables = new TickableManager();
-			player = new PlayerActivityManager();
 		}
 
 		internal void FinishLoad() {
-			
+			tickables = new TickableManager();
+			player = new PlayerActivityManager();
 		}
 	}
 }
