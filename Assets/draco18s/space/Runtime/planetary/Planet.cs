@@ -92,21 +92,10 @@ namespace Assets.draco18s.space.planetary {
 			outputs.AddRange(valid.Select(x => x.outputs.First().mat));
 			outputs = outputs.Select(x => {
 				if(x.GetProperty<AtomicProperties>().meltingPoint <= temp) {
-					try {
-						return smeltingRecipes.First(recipe => recipe.inputs.Select(input => input.mat).First() == x).outputs.First().mat;
-					} catch(Exception _) {
-						if(x.name.Contains("Ore")) {
-							Debug.Log($"{x.name} : {x.GetHashCode()}");
-							Debug.Log($"allRecipes.Count: {ScriptableObjectRegistry.GetRegistry2<Recipe>().Count()}");
-							foreach(var sr in smeltingRecipes) {
-								//Debug.Log($"    {sr.name}");
-								var f = sr.inputs.Select(input => input.mat).First();
-								Debug.Log($"    {f.name} {f.GetHashCode()}");
-								Debug.Log($"    {f == x}");
-							}
-						}
-						return x;
-					}
+					var r = smeltingRecipes.First(recipe => recipe.inputs.Select(input => input.mat).First() == x);
+					if(r != null)
+						return r.outputs.First().mat;
+					return x;
 				}
 				return x;
 			}).ToList();

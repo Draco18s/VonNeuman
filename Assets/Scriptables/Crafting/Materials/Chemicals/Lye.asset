@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Lye
   category: Chemicals
-  volume: 0.001
-  mass: 0.00213
+  volume: 1
+  mass: 2.13
+  props: []
+  references:
+    version: 1

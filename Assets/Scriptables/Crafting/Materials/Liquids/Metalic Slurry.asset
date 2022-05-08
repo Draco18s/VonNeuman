@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Metalic Slurry
   m_EditorClassIdentifier: 
   displayName: Metalic Slurry
-  category: Minerals
-  volume: 0.1
-  mass: 0.1826
+  category: Liquids
+  volume: 1
+  mass: 1.826
+  props: []
+  references:
+    version: 1

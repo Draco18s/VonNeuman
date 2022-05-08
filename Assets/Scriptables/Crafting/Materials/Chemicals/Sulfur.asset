@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Sulfur
   category: Chemicals
-  volume: 0.25
-  mass: 0.52
+  volume: 1
+  mass: 2.08
   props:
   - id: 0
   references:

@@ -21,7 +21,7 @@ MonoBehaviour:
     frac: 1
   - mat: {fileID: 11400000, guid: 83756336216f7c06db93fcc5345c4113, type: 2}
     quant: 1
-    frac: 1
+    frac: 10
   outputs:
   - mat: {fileID: 11400000, guid: 483e9d3477fd832a28dcaccd41905438, type: 2}
     quant: 2

@@ -1,3 +1,18 @@
 {
-	"name": "DracoEditorUtils"
+    "name": "DracoEditorUtils",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0b9bbb42eeae1e4f3959dc251e177770"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

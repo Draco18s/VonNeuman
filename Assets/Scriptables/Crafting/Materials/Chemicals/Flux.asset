@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Flux
   category: Chemicals
-  volume: 0.1
-  mass: 0.25
+  volume: 1
+  mass: 2.5
+  props: []
+  references:
+    version: 1

@@ -22,7 +22,7 @@ namespace Assets.draco18s.crafting.capabilities {
 			return new ItemStack(stack.item,InsertItem(stack.item, stack.GetSize(), simulate));
 		}
 
-		public float InsertItem(Material mat, float amount, bool simulate) {
+		public int InsertItem(Material mat, int amount, bool simulate) {
 			if(!IsItemValid(mat)) return amount;
 
 			float curMass = stacks.Sum(x => x.GetMass());
@@ -34,7 +34,7 @@ namespace Assets.draco18s.crafting.capabilities {
 
 			float remainingMass = Math.Max(curMass + (mat.mass*amount) - containerProperties.massCapacity, 0);
 			float remainingVolm = Math.Max(curVolm + (mat.volume*amount) - containerProperties.volumeCapacity, 0);
-			float amtExtra = Math.Max(remainingMass / mat.mass, remainingVolm / mat.volume);
+			int amtExtra = (int)Math.Ceiling(Math.Max(remainingMass / mat.mass, remainingVolm / mat.volume)*1000);
 
 			if(simulate) return amtExtra;
 			
@@ -52,14 +52,14 @@ namespace Assets.draco18s.crafting.capabilities {
 			return new ItemStack(stack.item,ExtractItem(stack.item, stack.GetSize(), simulate));
 		}
 
-		public float ExtractItem(Material mat, float amount, bool simulate) {
+		public int ExtractItem(Material mat, int amount, bool simulate) {
 			if(!IsItemValid(mat)) return amount;
 
 			ItemStack exist = stacks.Where(s => s.item == mat)
 				.DefaultIfEmpty(ItemStack.EMPTY)
 				.FirstOrDefault();
 
-			float remaining = amount - exist.GetSize();
+			int remaining = amount - exist.GetSize();
 
 			if(simulate) return remaining;
 

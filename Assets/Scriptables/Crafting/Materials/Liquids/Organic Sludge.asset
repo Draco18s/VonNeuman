@@ -14,17 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Organic Sludge
   category: Liquids
-  volume: 0.1
-  mass: 0.1826
-  props:
-  - id: 0
+  volume: 1
+  mass: 1.826
+  props: []
   references:
     version: 1
-    00000000:
-      type: {class: AtomicProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
-      data:      
-        molarMass: 0
-        greenhousePotential: 0
-        meltingPoint: 0
-        boilingPoint: 0
-        albedo: 0

@@ -32,6 +32,7 @@ MonoBehaviour:
     00000001:
       type: {class: PowerFuelProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
       data:
-        energyDensity: 24
-        consumeRate: 1
+        energyDensity: 24.6
+        consumeRate: 0.01
+        isMassConsumed: 1
         isHalfLife: 0

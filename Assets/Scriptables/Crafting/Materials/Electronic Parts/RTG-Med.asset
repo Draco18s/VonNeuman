@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: RTG-Med
   category: Electronic Parts
-  volume: 1
+  volume: 0.98
   mass: 0.15
   props:
   - id: 0
@@ -25,4 +25,5 @@ MonoBehaviour:
       data:
         energyDensity: 5
         consumeRate: 87.7
+        isMassConsumed: 0
         isHalfLife: 1

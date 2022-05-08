@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2840237476
+CRC: 3767587787
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fbb8ab722a4227185d602f9d025eef47
+    Hash: 0377d2b91227e74631fbe9b4fb96e424
   TypeTreeHash:
     serializedVersion: 2
     Hash: 768f995ba89f1c4a0d674a2b4610987d
@@ -60,13 +60,14 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Metals/Silicon.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Sulfur.asset
 - Assets/Scriptables/Crafting/Materials/Ship Parts/Tiny Fuel Tank.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Methanol.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Small Fuel Tank.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Melt Iron.asset
 - Assets/Scriptables/Crafting/Buildings/Gas Collector.asset
 - Assets/Scriptables/Crafting/Materials/Ores/Uranium Ore.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Tubing.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Support Frame.asset
-- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Drone Battery.asset
+- Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Lithium Drone Battery.asset
 - Assets/Scriptables/Crafting/Materials/Construction Parts/Bulkhead.asset
 - Assets/Scriptables/Crafting/Recipes/Smelter/Ash.asset
 - Assets/Scriptables/Crafting/Materials/Ores/Iron Ore.asset
@@ -82,9 +83,10 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Electronic Parts/Basic Computer Core.asset
 - Assets/Scriptables/Crafting/Recipes/Gas Collector/Xenon.asset
 - Assets/Scriptables/Crafting/Recipes/Chemical Plant/Clean Water 1.asset
-- Assets/Scriptables/Crafting/Recipes/Buildings/Extractor.asset
 - Assets/Scriptables/Crafting/Units/Surface Drone.asset
+- Assets/Scriptables/Crafting/Recipes/Buildings/Extractor.asset
 - Assets/Scriptables/Crafting/Recipes/Extractor/Mine Titanium.asset
+- Assets/Scriptables/Crafting/Recipes/Filtration Plant/Clean Water 3.asset
 - Assets/Scriptables/Crafting/Materials/Construction Parts/Support Frame.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Plate.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Helium.asset
@@ -92,6 +94,7 @@ Assets:
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Bulkhead.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Silica.asset
 - Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Iron Flux.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Hydrochloric Acid.asset
 - Assets/Scriptables/Crafting/Materials/Metals/Iron.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Metal Bulkhead.asset
 - Assets/Scriptables/Crafting/Recipes/Extractor/Mine Bauxite Ore.asset
@@ -133,6 +136,7 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Gasses/Methane.asset
 - Assets/Scriptables/Crafting/Recipes/Electronics Fabricator/Basic Computer Core.asset
 - Assets/Scriptables/Crafting/Buildings/Smelter.asset
+- Assets/Scriptables/Crafting/Recipes/Liquid Pump/Liquid Methanol.asset
 - Assets/Scriptables/Crafting/Materials/Chemicals/Sulfur.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Wiring.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Melt Silicon.asset
@@ -155,15 +159,18 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Fluoride.asset
 - Assets/Scriptables/Crafting/Materials/Chemicals/Lye.asset
 - Assets/Scriptables/ScriptableMaps.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen Chloride.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Hydrochloric Acid.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Ash.asset
-- Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio Tranceiver.asset
 - Assets/Scriptables/Crafting/Materials/Electronic Parts/Simple Motors.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Radio Tranceiver.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrochloric Acid.asset
 - Assets/Scriptables/Crafting/Materials/Ship Parts/Small Thruster.asset
-- Assets/Scriptables/Crafting/Materials/Materials/Construction Granulate.asset
 - Assets/Scriptables/Crafting/Recipes/Buildings/Chemical Plant.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Steel Plate.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Sulfuric Acid.asset
 - Assets/Scriptables/Crafting/Materials/Construction Parts/Basic Structural Panel.asset
+- Assets/Scriptables/Crafting/Materials/Materials/Construction Granulate.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Xenon.asset
 - Assets/Scriptables/Categories.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Potassium Chloride.asset
@@ -177,6 +184,7 @@ Assets:
 - Assets/Scriptables/Star Names.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Large Fuel Tank.asset
 - Assets/Scriptables/Crafting/Recipes/Gas Collector/Argon.asset
+- Assets/Scriptables/Crafting/Recipes/Nature/Hydrogen Chloride.asset
 - Assets/Scriptables/Crafting/Recipes/Gas Collector/Hydrogen.asset
 - Assets/Scriptables/Crafting/Buildings/Electronics Fabricator.asset
 - Assets/Scriptables/Crafting/Materials/Liquids/Sulfuric Acid.asset
@@ -188,12 +196,14 @@ Assets:
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Copper Wiring.asset
 - Assets/Scriptables/Crafting/Recipes/Gas Collector/Water Vapor.asset
 - Assets/Scriptables/Crafting/Buildings/Combustion Power Plant.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Hydrochloric Acid.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Cyanogen.asset
 - Assets/Scriptables/Crafting/Materials/Minerals/Hydrogen Sulfide.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Limestone.asset
 - Assets/Scriptables/Crafting/Materials/Ores/Silicon Ore.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Aluminum Plate.asset
 - Assets/Scriptables/Crafting/Buildings/Pumping Station.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Clean Water 3.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Aluminum Tubing.asset
 - Assets/Scriptables/Crafting/Materials/Chemicals/Carbon.asset
 - Assets/Scriptables/Crafting/Recipes/Smelter/Smelt Gold.asset
@@ -210,12 +220,13 @@ Assets:
 - Assets/Scriptables/Crafting/Recipes/Buildings/Fabricator.asset
 - Assets/Scriptables/Crafting/Recipes/Buildings/Filtration Plant.asset
 - Assets/Scriptables/Crafting/Buildings/Spacedock.asset
-- Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset
+- Assets/Scriptables/Crafting/Recipes/Gas Collector/Methanol.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/Tiny Thruster.asset
 - Assets/Scriptables/Crafting/Recipes/Extractor/Mine Silicon Ore.asset
 - Assets/Scriptables/Crafting/Buildings/Metal Former.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Water.asset
 - Assets/Scriptables/Crafting/Recipes/Filtration Plant/Clean Water 2.asset
+- Assets/Scriptables/Crafting/Materials/Construction Parts/Metal Tubing.asset
 - Assets/Scriptables/Crafting/Recipes/Nature/Hydrogen Cyanide.asset
 - Assets/Scriptables/Crafting/Recipes/Gas Collector/Oxygen.asset
 - Assets/Scriptables/Crafting/Materials/Liquids/Metalic Slurry.asset
@@ -269,15 +280,17 @@ Assets:
 - Assets/Scriptables/Crafting/Materials/Metals/Steel.asset
 - Assets/Scriptables/Crafting/Recipes/Chemical Plant/Lye.asset
 - Assets/Scriptables/Crafting/Materials/Chemicals/Calcium.asset
-- Assets/Scriptables/Crafting/Materials/Electronic Parts/Drone Battery.asset
+- Assets/Scriptables/Crafting/Materials/Electronic Parts/Lithium Drone Battery.asset
+- Assets/Scriptables/Crafting/Materials/Liquids/Methanol.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Argon.asset
 - Assets/Scriptables/Crafting/Materials/Gasses/Oxygen.asset
 - Assets/Scriptables/Crafting/Materials/Metals/Gold.asset
 - Assets/Scriptables/Crafting/Materials/Electronic Parts/RTG-Low.asset
+- Assets/Scriptables/Crafting/Recipes/Chemical Plant/Chlorine Gas.asset
 - Assets/Scriptables/Crafting/Recipes/Extractor/Mine Sulfur.asset
 - Assets/Scriptables/Crafting/Recipes/Fabricator/RTG-Med.asset
-- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset
 - Assets/Scriptables/Crafting/Recipes/Metal Former/Small Fuel Tank.asset
+- Assets/Scriptables/Crafting/Materials/Gasses/Hydrogen.asset
 - Assets/Scriptables/Crafting/Recipes/Buildings/Spacedock.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Molten Iron.asset
 - Assets/Scriptables/Crafting/Recipes/Liquid Pump/Pump Hydrofluoric Acid.asset

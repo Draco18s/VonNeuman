@@ -24,7 +24,7 @@ MonoBehaviour:
       type: {class: AtomicProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
       data:
         molarMass: 18.01528
-        greenhousePotential: 0
+        greenhousePotential: 0.0005
         meltingPoint: 0
-        boilingPoint: 0
+        boilingPoint: 100
         albedo: 0.06

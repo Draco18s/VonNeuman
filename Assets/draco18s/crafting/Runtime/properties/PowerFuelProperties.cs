@@ -8,12 +8,14 @@ namespace Assets.draco18s.crafting.properties {
 	{
 		public float energyDensity;
 		public float consumeRate;
+		public bool isMassConsumed;
 		public bool isHalfLife;
 
 		public override void Init() {
 			values = new Dictionary<string,object>();
-			values.Add("energyDensity",energyDensity);
-			values.Add("consumeRate",consumeRate);
+			values.Add("energyDensity",energyDensity); //MJ/kg or kWh per unit (3.6 kWh per MJ)
+			values.Add("consumeRate",consumeRate); //volume per kWh (mass consumed), kW depleted per hour (battery charge), or half-life years
+			values.Add("isMassConsumed",isMassConsumed);
 			values.Add("isHalfLife",isHalfLife);
 		}
 	}

@@ -19,6 +19,7 @@ MonoBehaviour:
   props:
   - id: 0
   - id: 1
+  - id: 2
   references:
     version: 1
     00000000:
@@ -34,3 +35,10 @@ MonoBehaviour:
       data:
         energyDensity: 52.5
         oxidizer: 2
+    00000002:
+      type: {class: PowerFuelProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
+      data:
+        energyDensity: 52.5
+        consumeRate: 0.31131428
+        isMassConsumed: 1
+        isHalfLife: 0

@@ -28,6 +28,17 @@ namespace Assets.draco18s.space.Editor
 		private static int pskip;
 		const int MaxListSize = 20;
 		private static List<Dictionary<string, object>> stardict;
+		private static Texture leftArrow;
+		private static Texture rightArrow;
+		private string searchText="";
+		private string psearchText="";
+		private int totalList;
+
+		void OnEnable() {
+			leftArrow = EditorGUIUtility.IconContent("d_scrollleft").image;
+			rightArrow = EditorGUIUtility.IconContent("d_scrollright").image;
+			totalList = 0;
+		}
 
 		public override void OnInspectorGUI()
 		{
@@ -35,38 +46,83 @@ namespace Assets.draco18s.space.Editor
 			SerializedProperty starsProp = serializedObject.FindProperty("knownStars");
 			EditorGUI.BeginDisabledGroup(running);
 
-			EditorGUILayout.BeginHorizontal();
-			EditorGUILayout.LabelField("Known Stars");
-			starsProp.arraySize = EditorGUILayout.DelayedIntField(starsProp.arraySize);
-			EditorGUILayout.EndHorizontal();
+			searchText = EditorGUILayout.TextField("Search", searchText);
 
-			//base.OnInspectorGUI();
-			/*if(rl == null) {
-				List<StarData> list = map.knownStars.Skip(skip).Take(MaxListSize).ToList();
-				rl = new ReorderableList(serializedObject, starsProp) {
-					drawHeaderCallback = (rect) =>
-					{
-						Rect rect2 = new Rect(rect);
-						rect2.x = Screen.width - 60;
-						rect2.width = 50;
-						starsProp.arraySize = EditorGUI.DelayedIntField(rect2, starsProp.arraySize);
-						EditorGUI.LabelField(rect,"Known Stars");
-					},
-					drawElementCallback = (rect, index, isActive, isFocused) => {
-						if(index >= skip && index < skip+MaxListSize) {
-							EditorGUI.PropertyField(rect, starsProp.GetArrayElementAtIndex(index));
-						}
-					},
-					elementHeightCallback = (index) => {
-						if(index >= skip && index < skip+MaxListSize) {
-							return EditorGUI.GetPropertyHeight(starsProp.GetArrayElementAtIndex(index));
-						}
-						return 0;
-					},
-					draggable = false
-				};
+			if(rl == null || psearchText != searchText) {
+				psearchText = searchText;
+				var plist = map.knownStars.Select((value, index) => new { index, value }).Where(x => string.IsNullOrEmpty(searchText) || x.value.properName.Contains(searchText));
+				var list = plist.Skip(skip).Take(MaxListSize).ToList();
+				totalList = plist.Count();
+				if(totalList == 0) {
+					rl = new ReorderableList(list, typeof(StarData)) {
+						drawHeaderCallback = (rect) =>
+						{
+							Rect rect2 = new Rect(rect);
+							rect2.x = Screen.width - 60;
+							rect2.width = 50;
+							starsProp.arraySize = EditorGUI.DelayedIntField(rect2, starsProp.arraySize);
+							EditorGUI.LabelField(rect,"Known Stars");
+						},
+						drawElementCallback = (rect, index, isActive, isFocused) => {
+							
+						},
+						elementHeightCallback = (index) => {
+							return 0;
+						},
+						draggable = false,
+						displayAdd = false
+					};
+				}
+				else {
+					rl = new ReorderableList(list, typeof(StarData)) {
+						drawHeaderCallback = (rect) =>
+						{
+							Rect rect2 = new Rect(rect);
+							rect2.x = Screen.width - 60;
+							rect2.width = 50;
+							starsProp.arraySize = EditorGUI.DelayedIntField(rect2, starsProp.arraySize);
+							EditorGUI.LabelField(rect,"Known Stars");
+						},
+						drawElementCallback = (rect, index, isActive, isFocused) => {
+							//if(index >= skip && index < skip+MaxListSize) {
+								EditorGUI.PropertyField(rect, starsProp.GetArrayElementAtIndex(list[index].index));
+							//}
+						},
+						elementHeightCallback = (index) => {
+							//if(index >= skip && index < skip+MaxListSize) {
+								return EditorGUI.GetPropertyHeight(starsProp.GetArrayElementAtIndex(list[index].index));
+							//}
+							//return 0;
+						},
+						draggable = false,
+						displayAdd = false
+					};
+				}
 			}
-			rl.DoLayoutList();*/
+			rl.DoLayoutList();
+			if(totalList > MaxListSize) {
+				bool back = !(skip > 0);
+				bool fore = !(totalList > skip+MaxListSize);
+				EditorGUILayout.BeginHorizontal();
+				GUILayout.FlexibleSpace();
+				EditorGUI.BeginDisabledGroup(back);
+				if(GUILayout.Button(new GUIContent(leftArrow), GUILayout.Width(24), GUILayout.Height(24))) {
+					skip -= MaxListSize;
+					rl = null;
+				}
+				EditorGUI.EndDisabledGroup();
+				GUIContent c = new GUIContent($"{(int)(skip/MaxListSize)+1}/{(int)(totalList / MaxListSize)+1}");
+				float w = GUI.skin.label.CalcSize(c).x;
+				EditorGUILayout.LabelField(c, GUILayout.Width(w));
+				EditorGUI.BeginDisabledGroup(fore);
+				if(GUILayout.Button(new GUIContent(rightArrow), GUILayout.Width(24), GUILayout.Height(24))) {
+					skip += MaxListSize;
+					rl = null;
+				}
+				EditorGUI.EndDisabledGroup();
+				GUILayout.FlexibleSpace();
+				EditorGUILayout.EndHorizontal();
+			}
 			EditorGUILayout.LabelField(string.IsNullOrEmpty(filePath) ? "" : PathExtensions.MakeRelative(filePath,Application.dataPath));
 			if (GUILayout.Button("Select CSV")) {
 				filePath = EditorUtility.OpenFilePanel("Select CSV","","csv");

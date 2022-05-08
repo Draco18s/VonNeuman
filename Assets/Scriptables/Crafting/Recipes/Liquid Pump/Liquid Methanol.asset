@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
-  m_Name: Flux
+  m_Name: Liquid Methanol
   m_EditorClassIdentifier: 
-  inputs:
-  - mat: {fileID: 11400000, guid: 160b6cf433c1a68e48ea9f604bf11030, type: 2}
-    quant: 1
-    frac: 1
+  inputs: []
   outputs:
-  - mat: {fileID: 11400000, guid: 83756336216f7c06db93fcc5345c4113, type: 2}
-    quant: 1
+  - mat: {fileID: 11400000, guid: b474f4b4785fe975db703b567f3b354a, type: 2}
+    quant: 10
     frac: 1
-  building: {fileID: 11400000, guid: dd342c8b43c79e376bdbb5adcafc4bd5, type: 2}
-  time: 3600
+  building: {fileID: 11400000, guid: f0000f343ca06fce79dc0c4c73f6f906, type: 2}
+  time: 9000

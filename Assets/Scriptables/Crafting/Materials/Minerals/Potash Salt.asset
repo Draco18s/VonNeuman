@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Potash Salt
   category: Minerals
-  volume: 0.001
-  mass: 0.0025
+  volume: 1
+  mass: 2.5
   props:
   - id: 0
   references:

@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fbef5c56cb08bbd1a7559979f7538c9, type: 3}
-  m_Name: Drone Battery
+  m_Name: Methanol
   m_EditorClassIdentifier: 
   inputs:
-  - mat: {fileID: 11400000, guid: 88631b22aa1b9bbad8141d2e0ec20b9d, type: 2}
-    quant: 1
-    frac: 100
   - mat: {fileID: 11400000, guid: 08109ddc3b17a462d8f4c17f444eb6c4, type: 2}
     quant: 1
-    frac: 100
-  outputs:
-  - mat: {fileID: 11400000, guid: d29bb0d61566fb6819a629ad3e0f9ce5, type: 2}
+    frac: 1
+  - mat: {fileID: 11400000, guid: f72001146f8f3da01a8f583640669d7a, type: 2}
     quant: 1
     frac: 1
-  building: {fileID: 11400000, guid: e71f9329c9daeef82962b242a756bf0a, type: 2}
-  time: 14400
+  - mat: {fileID: 11400000, guid: d403ab5524605030991c41bd2c97ed33, type: 2}
+    quant: 1
+    frac: 1
+  outputs:
+  - mat: {fileID: 11400000, guid: 72625bc808163fe7696d96ae8fc1b8b8, type: 2}
+    quant: 1
+    frac: 1
+  building: {fileID: 0}
+  time: 0

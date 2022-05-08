@@ -46,6 +46,14 @@ namespace Assets.draco18s.crafting
 			return (T)t[name];
 		}
 
+		public bool HasProperty(string name) {
+			return props.Any(x => x.HasValue(name));
+		}
+
+		public bool HasProperty<T>()where T:MaterialProperty {
+			return props.Any(x => x is T);
+		}
+
 		public T GetProperty<T>() where T:MaterialProperty {
 			MaterialProperty t = props.FirstOrDefault(x => x is T);
 			return (T)t;

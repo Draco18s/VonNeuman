@@ -50,7 +50,7 @@ namespace Assets.draco18s.space.ui {
 			m.sprite = ScriptableObjectRegistry.GetRegistry<SpriteMap>().First(x => x.spriteId == sys.spriteData.spriteId.Replace("star","star-large")).sprite;
 			RectTransform rt = ((RectTransform)star.transform);
 			rt.localScale = Vector3.one*4;
-			rt.localPosition = Vector3.one*95;
+			rt.localPosition = new Vector3(1,1,0)*95;
 			rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,m.sprite.rect.width);
 			rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,m.sprite.rect.height);
 			float mult = 32/sys.titiusBodeK0;

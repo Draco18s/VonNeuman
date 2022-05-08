@@ -11,9 +11,9 @@ using Material = Assets.draco18s.crafting;
 namespace Assets.draco18s.crafting.capabilities {
 	public interface IItemHandler {
 		ItemStack InsertItem(ItemStack stack, bool simulate);
-		float InsertItem(Material mat, float amount, bool simulate);
+		int InsertItem(Material mat, int amount, bool simulate);
 		ItemStack ExtractItem(ItemStack stack, bool simulate);
-		float ExtractItem(Material mat, float amount, bool simulate);
+		int ExtractItem(Material mat, int amount, bool simulate);
 		bool IsItemValid(ItemStack stack);
 		List<ItemStack> GetItems();
 	}

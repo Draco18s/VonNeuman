@@ -19,5 +19,5 @@ MonoBehaviour:
   _data: Assets/Scriptables/Crafting/Buildings/Chemical Plant.asset,Assets/Scriptables/Crafting/Buildings/Combustion
     Power Plant.asset,Assets/Scriptables/Crafting/Buildings/Electronics Fabricator.asset,Assets/Scriptables/Crafting/Buildings/Extractor.asset,Assets/Scriptables/Crafting/Buildings/Fabricator.asset,Assets/Scriptables/Crafting/Buildings/Filtration
     Plant.asset,Assets/Scriptables/Crafting/Buildings/Gas Collector.asset,Assets/Scriptables/Crafting/Buildings/Metal
-    Former.asset,Assets/Scriptables/Crafting/Buildings/Pumping Station.asset,Assets/Scriptables/Crafting/Buildings/Smelter.asset,Assets/Scriptables/Crafting/Buildings/Spacedock.asset
+    Former.asset,Assets/Scriptables/Crafting/Buildings/Pumping Station.asset,Assets/Scriptables/Crafting/Buildings/Smelter.asset,Assets/Scriptables/Crafting/Buildings/Spacedock.asset,Assets/Scriptables/Crafting/Buildings/Warehouse.asset
   _bundle: galaxy

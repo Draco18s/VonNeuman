@@ -18,18 +18,13 @@ MonoBehaviour:
   mass: 18.95
   props:
   - id: 0
-  - id: 1
   references:
     version: 1
     00000000:
       type: {class: AtomicProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
-      data:      
+      data:
         molarMass: 235.04393
         greenhousePotential: 0
         meltingPoint: 3818
         boilingPoint: 3927
         albedo: 0.05
-    00000001:
-      type: {class: RocketFuelProperties, ns: Assets.draco18s.crafting.properties, asm: Assembly-CSharp}
-      data:
-        energyDensity: 0

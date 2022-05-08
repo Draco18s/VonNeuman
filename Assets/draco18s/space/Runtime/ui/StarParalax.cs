@@ -13,10 +13,10 @@ namespace Assets.draco18s.space.ui {
 			float p = (transform.localPosition.z*102.4f);// + (wid/2);
 			if(p < 0) {
 				//p = 1/Mathf.Abs(p);
-				p = -Mathf.Log(Mathf.Abs(p+1))*3f;
+				p = -Mathf.Log(Mathf.Abs(p+1))*3.3f;
 			}
 			else {
-				p = Mathf.Log(p+1)*2f;
+				p = Mathf.Log(p+1)*1f;
 				//p /= (wid/64);
 			}
 			rate = p;
