@@ -262,17 +262,6 @@ namespace Assets.draco18s.space.planetary {
 				Material sd = string.IsNullOrEmpty(jsd) ? null : matMap[jsd];
 				string jocen = (string)jObject.GetValue("ocean");
 				Material ocen = string.IsNullOrEmpty(jocen) ? null : matMap[jocen];
-
-				/*
-				string[] atmo = v.atmosphere.Select(x => x.displayName).ToArray();
-				o.Add(new JProperty("atmo", JArray.FromObject(atmo)));
-
-				string[] resource = v.resources.Select(x => x.displayName).ToArray();
-				o.Add(new JProperty("resources", JArray.FromObject(resource)));
-
-				o.Add(new JProperty("surfdep", v.surfaceDeposits.displayName));
-				o.Add(new JProperty("ocean", v.ocean.displayName));
-				*/
 				
 				return new Planet() {
 					orbitalDistance = orbit,

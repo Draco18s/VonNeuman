@@ -9,10 +9,10 @@ namespace Assets.draco18s.crafting.capabilities {
 		public static Capability<IItemHandler> CAPABILITY = new Capability<IItemHandler>();
 
 		protected List<ItemStack> stacks;
-		protected Material material;
+		protected MaterialInstance material;
 		protected ContainerProperties containerProperties;
 
-		public ContainerCapability(Material mat) {
+		public ContainerCapability(MaterialInstance mat) {
 			material = mat;
 			containerProperties = material.GetProperty<ContainerProperties>();
 			stacks = new List<ItemStack>();
@@ -22,13 +22,15 @@ namespace Assets.draco18s.crafting.capabilities {
 			return new ItemStack(stack.item,InsertItem(stack.item, stack.GetSize(), simulate));
 		}
 
-		public int InsertItem(Material mat, int amount, bool simulate) {
-			if(!IsItemValid(mat)) return amount;
+		public int InsertItem(MaterialInstance matinst, int amount, bool simulate) {
+			if(!IsItemValid(matinst)) return amount;
+
+			Material mat = matinst.item;
 
 			float curMass = stacks.Sum(x => x.GetMass());
 			float curVolm = stacks.Sum(x => x.GetVolume());
 
-			ItemStack exist = stacks.Where(s => s.item == mat)
+			ItemStack exist = stacks.Where(s => s.item.item == mat)
 				.DefaultIfEmpty(ItemStack.EMPTY)
 				.FirstOrDefault();
 
@@ -39,7 +41,7 @@ namespace Assets.draco18s.crafting.capabilities {
 			if(simulate) return amtExtra;
 			
 			if(exist.IsEmpty()) {
-				stacks.Add(new ItemStack(mat,amount - amtExtra));
+				stacks.Add(new ItemStack(matinst,amount - amtExtra));
 			}
 			else {
 				exist.Add(exist.GetSize() + amount - amtExtra);
@@ -52,7 +54,7 @@ namespace Assets.draco18s.crafting.capabilities {
 			return new ItemStack(stack.item,ExtractItem(stack.item, stack.GetSize(), simulate));
 		}
 
-		public int ExtractItem(Material mat, int amount, bool simulate) {
+		public int ExtractItem(MaterialInstance mat, int amount, bool simulate) {
 			if(!IsItemValid(mat)) return amount;
 
 			ItemStack exist = stacks.Where(s => s.item == mat)
@@ -72,8 +74,8 @@ namespace Assets.draco18s.crafting.capabilities {
 			return IsItemValid(stack.item);
 		}
 
-		public bool IsItemValid(Material mat) {
-			return containerProperties.canContainCategory.Contains(mat.category);
+		public bool IsItemValid(MaterialInstance mat) {
+			return containerProperties.canContainCategory.Contains(mat.item.category);
 		}
 
 		public List<ItemStack> GetItems() {

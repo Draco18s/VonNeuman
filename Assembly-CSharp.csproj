@@ -79,7 +79,7 @@
      <Compile Include="Assets/draco18s/legion/units/Drone.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/Factory.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/capabilities/MaterialCapability.cs" />
-     <Compile Include="Assets/draco18s/crafting/Runtime/ItemStack.cs" />
+     <Compile Include="Assets/draco18s/crafting/Runtime/MaterialInstance.cs" />
      <Compile Include="Assets/draco18s/serialization/Runtime/JsonResolver.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/capabilities/IMaterialProperty.cs" />
      <Compile Include="Assets/Nebula Noise/BGNebBig.cs" />
@@ -101,6 +101,7 @@
      <Compile Include="Assets/Nebula Noise/BGNebDetail.cs" />
      <Compile Include="Assets/draco18s/gameAssets/Runtime/ElementData.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/capabilities/Capability.cs" />
+     <Compile Include="Assets/draco18s/crafting/Runtime/ItemStack.cs" />
      <None Include="Assets/draco18s/shaders/blur.shader" />
      <None Include="Assets/draco18s/shaders/perlin.shader" />
      <None Include="Assets/Nebula Noise/NebShaderBig.shader" />

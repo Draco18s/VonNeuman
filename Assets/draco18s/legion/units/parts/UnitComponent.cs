@@ -16,12 +16,12 @@ using MaterialProperty = Assets.draco18s.crafting.properties.MaterialProperty;
 namespace Assets.draco18s.legion.units.parts
 {
 	public sealed class UnitComponent : ICapabilityProvider {
-		private Material item;
+		private MaterialInstance item;
 		private IItemHandler inventory;
 		private LazyOptional<IItemHandler> contents = LazyOptional<IItemHandler>.Empty();
 		private Dictionary<Capability<IMaterialProperty>,LazyOptional<IMaterialProperty>> materialProps = new Dictionary<Capability<IMaterialProperty>,LazyOptional<IMaterialProperty>>();
 
-		public UnitComponent(Material _item) {
+		public UnitComponent(MaterialInstance _item) {
 			item = _item;
 			foreach(MaterialProperty p in item.GetAllProperties()) {
 				if(p is ContainerProperties) {
@@ -43,11 +43,11 @@ namespace Assets.draco18s.legion.units.parts
 		}
 
 		public float GetDryMass() {
-			return item.mass;
+			return item.GetMass();
 		}
 
 		public float GetTotalMass() {
-			float m = item.mass;
+			float m = item.GetMass();
 			contents.IfPresent(c => {
 				m += c.GetItems().Sum(x => x.GetMass());
 			});
