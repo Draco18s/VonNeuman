@@ -59,6 +59,7 @@ namespace Assets.draco18s.legion.game {
 			}
 			else {
 				data = new GameData(ScriptableObjectRegistry.GetRegistry<StarPositionMap>());
+				data.FinishLoad();
 				DataAccess.Save(data, ContractResolver.jsonSettings);
 			}
 			//data = new GameData(ScriptableObjectRegistry.GetRegistry<StarPositionMap>());

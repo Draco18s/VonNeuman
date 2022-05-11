@@ -11,10 +11,11 @@ using Assets.draco18s.legion.units;
 
 namespace Assets.draco18s.legion.game {
 	public class PlayerActivityManager {
+		public List<BaseUnit> allUnits;
 		public BaseUnit activeUnit;
 
 		public PlayerActivityManager() {
-
+			allUnits = new List<BaseUnit>();
 		}
 	}
 }

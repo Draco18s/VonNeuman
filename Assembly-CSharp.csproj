@@ -102,6 +102,7 @@
      <Compile Include="Assets/draco18s/gameAssets/Runtime/ElementData.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/capabilities/Capability.cs" />
      <Compile Include="Assets/draco18s/crafting/Runtime/ItemStack.cs" />
+     <Compile Include="Assets/draco18s/legion/game/KnownMaterialInstances.cs" />
      <None Include="Assets/draco18s/shaders/blur.shader" />
      <None Include="Assets/draco18s/shaders/perlin.shader" />
      <None Include="Assets/Nebula Noise/NebShaderBig.shader" />

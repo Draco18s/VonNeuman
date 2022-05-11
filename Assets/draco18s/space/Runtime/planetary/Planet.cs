@@ -92,7 +92,7 @@ namespace Assets.draco18s.space.planetary {
 			outputs.AddRange(valid.Select(x => x.outputs.First().mat));
 			outputs = outputs.Select(x => {
 				if(x.GetProperty<AtomicProperties>().meltingPoint <= temp) {
-					var r = smeltingRecipes.First(recipe => recipe.inputs.Select(input => input.mat).First() == x);
+					var r = smeltingRecipes.FirstOrDefault(recipe => recipe.inputs.Select(input => input.mat).FirstOrDefault() == x);
 					if(r != null)
 						return r.outputs.First().mat;
 					return x;
