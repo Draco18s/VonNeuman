@@ -15,6 +15,14 @@ namespace Assets.draco18s.crafting
 		private float maxEnergy;
 		public bool isConglomerate => item.volume != 1;
 
+		// TODO: Minecraft like attributes?
+		// Artificer like buff perk system?
+		/*public int overallQualityRating { get; private set; }
+		public int efficiencyRating { get; private set; }
+		public int durabilityRating { get; private set; }
+		public int massReductionRating { get; private set; }
+		public int materialWastageRating { get; private set; }*/
+
 		public MaterialInstance(Material _item) {
 			item = _item;
 			if(item.HasProperty<PowerFuelProperties>()){
@@ -23,8 +31,10 @@ namespace Assets.draco18s.crafting
 					maxEnergy = prop.energyDensity;
 				}
 			}
+			//overallQualityRating = efficiencyRating = durabilityRating = massReductionRating = materialWastageRating = 1;
 		}
 
+		// TOOD: incomplete copy
 		public MaterialInstance Clone() {
 			return new MaterialInstance(item);
 		}
