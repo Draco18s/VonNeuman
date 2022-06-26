@@ -11,6 +11,10 @@ namespace Assets.draco18s.crafting.properties {
 		{
 			get => values[index];
 		}
+		public virtual object this[string index, MaterialInstance item]
+		{
+			get => values[index];
+		}
 
 		public virtual void Init() {
 

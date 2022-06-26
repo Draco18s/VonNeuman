@@ -11,6 +11,14 @@ namespace Assets.draco18s.crafting.properties {
 		public bool isMassConsumed;
 		public bool isHalfLife;
 
+		/*public override object this[string index, MaterialInstance item]
+		{
+			get {
+				float m = index == "energyDensity" ? 1 : item.qualityModifiers[efficiencyRating];
+				retrun values[index] * m;
+			}
+		}*/
+
 		public override void Init() {
 			values = new Dictionary<string,object>();
 			values.Add("energyDensity",energyDensity); //MJ/kg or kWh per unit (3.6 kWh per MJ)

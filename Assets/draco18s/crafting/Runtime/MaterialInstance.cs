@@ -1,17 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
+using System.Linq;
 using Assets.draco18s.util;
 using Assets.draco18s.crafting.capabilities;
 using Assets.draco18s.crafting.properties;
+using JetBrains.Annotations;
+using UnityEngine;
 
 namespace Assets.draco18s.crafting
 {
     public sealed class MaterialInstance {
 		public readonly Material item;
 
-		private float curEnergy;
 		private float maxEnergy;
 		public bool isConglomerate => item.volume != 1;
 
@@ -22,27 +24,49 @@ namespace Assets.draco18s.crafting
 		public int durabilityRating { get; private set; }
 		public int massReductionRating { get; private set; }
 		public int materialWastageRating { get; private set; }*/
+		internal Dictionary<string,float> qualityModifiers = new Dictionary<string,float>();
 
-		public MaterialInstance(Material _item) {
-			item = _item;
+		public MaterialInstance([NotNull] Material itemin) {
+			item = itemin;
 			if(item.HasProperty<PowerFuelProperties>()){
 				PowerFuelProperties prop = item.GetProperty<PowerFuelProperties>();
 				if(!prop.isMassConsumed) {
 					maxEnergy = prop.energyDensity;
 				}
 			}
-			//overallQualityRating = efficiencyRating = durabilityRating = massReductionRating = materialWastageRating = 1;
+			qualityModifiers.Add("overallQualityRating", 1);
+			qualityModifiers.Add("efficiencyRating", 1);
+			qualityModifiers.Add("durabilityRating", 1);
+			qualityModifiers.Add("massReductionRating", 1);
+			qualityModifiers.Add("materialWastageRating", 1);
 		}
 
-		// TOOD: incomplete copy
+		public MaterialInstance([NotNull] MaterialInstance instancein) : this(instancein.item) {
+			qualityModifiers["overallQualityRating"] = qualityModifiers["overallQualityRating"];
+			qualityModifiers["efficiencyRating"] = qualityModifiers["efficiencyRating"];
+			qualityModifiers["durabilityRating"] = qualityModifiers["durabilityRating"];
+			qualityModifiers["massReductionRating"] = qualityModifiers["massReductionRating"];
+			qualityModifiers["materialWastageRating"] = qualityModifiers["materialWastageRating"];
+		}
+
 		public MaterialInstance Clone() {
-			return new MaterialInstance(item);
+			MaterialInstance r = new MaterialInstance(item);
+			r.qualityModifiers.Add("overallQualityRating",qualityModifiers["overallQualityRating"]);
+			r.qualityModifiers.Add("efficiencyRating",qualityModifiers["efficiencyRating"]);
+			r.qualityModifiers.Add("durabilityRating",qualityModifiers["durabilityRating"]);
+			r.qualityModifiers.Add("massReductionRating",qualityModifiers["massReductionRating"]);
+			r.qualityModifiers.Add("materialWastageRating",qualityModifiers["materialWastageRating"]);
+			return r;
 		}
 
 		public override bool Equals(object obj) {
 			if(obj is MaterialInstance other)
-				return item == other.item && maxEnergy < 1;
+				return item == other.item && maxEnergy < 1 && HasSameQualityModifiers(other);
 			return false;
+		}
+
+		private bool HasSameQualityModifiers(MaterialInstance other) {
+			return qualityModifiers.Keys.All(key => Mathf.Approximately(qualityModifiers[key], other.qualityModifiers[key]));
 		}
 
 		public override int GetHashCode() {
@@ -50,7 +74,7 @@ namespace Assets.draco18s.crafting
 		}
 
 		public float GetMass() {
-			return item.mass / (isConglomerate ? 1000 : 1);
+			return item.mass / (isConglomerate ? 1000 : 1) * qualityModifiers["massReductionRating"];
 		}
 
 		public float GetVolume() {

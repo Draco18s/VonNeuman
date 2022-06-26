@@ -1,5 +1,5 @@
 using System;
-using UnityEngine;
+using Assets.draco18s.crafting;
 
 namespace Assets.draco18s.gameAssets {
 	[Serializable]
@@ -10,7 +10,7 @@ namespace Assets.draco18s.gameAssets {
 		[Obsolete]
 		public float greenhousePotential;
 		public ElementType elemTyp;
-		public ScriptableObject material;
+		public Material material;
 	}
 
 	[Flags]
